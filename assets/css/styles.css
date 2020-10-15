@@ -225,7 +225,7 @@ img{
 /*BUTTONS*/
 .button{
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: var(--second-color);
   color: #fff;
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
