@@ -209,10 +209,13 @@ img {
 }
 
 .foodart {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 30px;
   margin-top: 5.5rem;
-  width: 380px;
-  height: 457px;
+  width: 350px;
+  height: 421px;
   /*border-radius: 5px;*/
   background: url("../img/foodart.png");
   background-size: 100% auto;

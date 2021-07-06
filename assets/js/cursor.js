@@ -4,8 +4,8 @@ const cursorSpan = document.querySelector(".cursor");
 const textArray = [
   "☁️ I daydream about product ideas",
   "📱 I like building mobile apps",
-  "👩🏻‍💼 I am a woman in finance",
   "🚀 I teach middle school students AI and ML",
+  "🧩 I enjoy playing word games and strategy games",
 ];
 const typingDelay = 100;
 const erasingDelay = 100;
