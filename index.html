@@ -90,7 +90,7 @@
       </nav>
     </header>
 
-    <section class="about-me reveal" id="about-me">
+    <section class="about-me" id="about-me">
       <div class="container-lg">
         <div class="row nin-vh-100 align-items-center align-content-center">
           <div class="col-md-6">
@@ -475,11 +475,11 @@
 
             var windowheight = window.innerHeight;
             var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 150;
-
-            if(revealtop < windowheight - revealpoint){
+            var revealpoint = 0;
+            reveals[i].classList.add('active');
+            /*if(revealtop < windowheight - revealpoint){
                 reveals[i].classList.add('active');
-            }
+            }*/
         }
     }
     </script>
