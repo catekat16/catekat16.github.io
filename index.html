@@ -3,415 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/cursor.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="assets/favicon/safari-pinned-tab.svg"
-      color="#ff88f0"
-    />
-    <meta name="msapplication-TileColor" content="#000000" />
-    <meta name="theme-color" content="#ff88f0" />
-
-    <!-- =====BOX ICONS===== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- Hotjar Tracking Code for caitlynchen.com -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 2168083, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
-
-    <title>Caitlyn Chen</title>
+    <title>Personal Website</title>
   </head>
   <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-      <nav class="nav bd-grid">
-        <div>
-          <a href="#" class="nav__logo">Caitlyn</a>
+    <header class="header">
+      <a href="#" class="header__logo">Caitlyn</a>
+
+      <ion-icon
+        name="menu-outline"
+        class="header__toggle"
+        id="nav-toggle"
+      ></ion-icon>
+
+      <nav class="nav" id="nav-menu">
+        <div class="nav__content bd-grid">
+          <ion-icon
+            name="close-outline"
+            class="nav__close"
+            id="nav-close"
+          ></ion-icon>
+
+          <div class="nav__perfil">
+            <div class="nav__img">
+              <!--<span class="nav__pizza">🍕</span>-->
+              <img src="assets/img/🍕.png" alt="" />
+            </div>
+
+            <div>
+              <a href="#" class="nav__name">Caitlyn</a>
+              <span class="nav__profesion">Product Manager</span>
+            </div>
+
+            <div class="nav__menu">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="" class="nav__link">👋 About Me</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">💻 Experience</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">👉 Resume</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#projects" class="nav__link">📱 Projects</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">👋 Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about-me" class="nav__link">About Me</a>
-            </li>
-            <li class="nav__item">
-              <a href="#passion-projects" class="nav__link">Passion Projects</a>
-            </li>
-            <li class="nav__item">
-              <a href="#lets-chat" class="nav__link">Let's Chat!</a>
-            </li>
-            <li class="nav__item">
-              <a href="#sad-pupper" class="nav__link">Sad Pupper </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
+        <!--<div class="nav__social">
+            <a href="#" class="nav__social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="#" class="nav__social-icon"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="#" class="nav__social-icon"><ion-icon name="logo-instagram"></ion-icon></ion-icon></a>
+        </div>-->
       </nav>
     </header>
 
-    <main class="l-main">
-      <!--===== HOME =====-->
-      <section class="home bd-grid" id="home">
-        <div class="home__data">
-          <h1 class="home__title">
-            <br /><span class="home__title-color">Hi, I'm Caitlyn</span><br />
-            <div class="home_title">
-              <p>
-                <span class="home__title-color">Let's chat about </span
-                ><br /><span class="typed-text"></span
-                ><span class="cursor">&nbsp;</span><br />
-              </p>
+    <section class="home py-5">
+      <div class="container-lg">
+        <div class="row nin-vh-100 align-items-center align-content-center">
+          <div class="col-md-6">
+            <div class="home-img text-center">
+              <div class="foodart"></div>
+              <!--<img
+                src="assets/img/foodart.jpg"
+                class="foodart"
+                alt="profile img"
+              />-->
             </div>
-          </h1>
-
-          <a href="#lets-chat" class="button">Let's Chat!</a>
-        </div>
-
-        <div class="home__social">
-          <a
-            href="https://www.linkedin.com/in/caitlyn-chen/"
-            class="home__social-icon"
-            ><i class="bx bxl-linkedin-square"></i
-          ></a>
-          <a href="#contact" class="home__social-icon"
-            ><i class="bx bx-calendar-plus"></i
-          ></a>
-          <a href="https://github.com/catekat16" class="home__social-icon"
-            ><i class="bx bxl-github bx-tada"></i>
-          </a>
-          <!--<a href="mailto:caitlyn.chen8@gmail.com" class="home__social-icon"
-            ><i class="bx bx-envelope"></i
-          ></a>-->
-
-          <!--<a href="https://twitter.com/metapropnyc" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>-->
-        </div>
-
-        <div class="home__img">
-          <img src="assets/img/perfil.png" alt="" />
-        </div>
-      </section>
-
-      <!--===== ABOUT =====-->
-      <section class="about section" id="about-me">
-        <h2 class="section-title">About Me</h2>
-
-        <div class="about__container bd-grid">
-          <div class="about__img">
-            <img src="assets/img/about.png" alt="" />
           </div>
+          <div class="col-md-6 order-md-first">
+            <div class="home-text">
+              <!--<p class="text-muted mb-1">Hello I'm</p>-->
+              <h1>Hey, I'm Caitlyn! 👋</h1>
+              <h3 class="text-muted">I am a Product Designer</h3>
+              <p></p>
+              <p>
+                ✨ I’m a rising senior studying computer science at Columbia
+                University with minors in applied math and entrepreneurship.
+              </p>
 
-          <div>
-            <p class="footer__title"><b>🙋🏻‍♀ I'm Caitlyn</b></p>
-            <!--<h2 class="about__subtitle">I'm Caitlyn</h2>-->
-            <p
-              class="about__text"
-              style="color: #330026; line-height: 1.8; font-size: 15.5px"
-            >
-              <b
-                >I'm currently a junior at Columbia University studying computer
-                science and entrepreneurship. This semester, I'm also interning
-                in venture capital and working on passion projects on the side. </b
-              ><br /><br />
-              <b>
-                Really, please feel free to schedule a coffee chat below. Down
-                to talk about anything...random product ideas, career resources,
-                zoom university, life advice, memes, favorite food spots in NY,
-                anything. </b
-              ><br /><br />
-              <!--👩🏻‍💻 💁🏻‍♀ 🤷🏻‍♀-->
-              <b> Looking forward to our virtual coffee chat! 🤩 </b>
-              <!--
-                        <b>Outside of academics and careers, I can be found giving a helping hand to the tendrils of cucumber plants as they climb up the trellises in my garden, making strawberry milkshakes, drawing an aurora borealis landscape on my iPad, or falling down the rabbit hole of ideating for my newest product idea.
-                        </b>
-                        -->
-            </p>
+              <p>
+                🎨 As a lifelong artist, I’ve explored various mediums of art.
+                I’ve dabbled in doodles, food, and product design.
+              </p>
+
+              <p>💻 Check out some of my projects and experiences below!</p>
+              <a href="#projects">👉 Check out my projects</a>
+            </div>
           </div>
         </div>
-      </section>
-
-      <!--===== WORK =====-->
-      <section class="work section" id="passion-projects">
-        <h2 class="section-title">Passion Projects</h2>
-
-        <div class="about__container bd-grid">
-          <iframe
-            src="https://lumos.social/"
-            href="https://lumos.social/"
-            width="100%"
-            height="280"
-            style="
-              border: none;
-              box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-              border-radius: 0.5rem;
-            "
-          ></iframe>
-
-          <!--<img src="assets/img/work1.jpg" alt="">-->
-
-          <div class="work__img">
-            <a href="https://github.com/catekat16/starcheck#Maple"
-              ><img src="assets/img/maple.png" alt=""
-            /></a>
-          </div>
-
-          <!--<iframe
-            src="https://my.spline.design/characterbunny-eb2d16129200b5218e25cdab20fc7d8b/"
-            frameborder="0"
-            width="100%"
-            height="280"
-          ></iframe>-->
-
-          <!--
-                    <div class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </div>-->
-        </div>
-      </section>
-
-      <!--===== CONTACT =====-->
-      <section class="contact section" id="lets-chat">
-        <h2 class="section-title">Let's Chat! ☕</h2>
-
-        <div class="bd-grid">
-          <!-- Calendly inline widget begin -->
-          <div
-            class="calendly-inline-widget"
-            data-url="https://calendly.com/caitlyn-chen/coffee-chat?background_color=fcf7fb&primary_color=ff1a8c"
-            style="min-width: 320px; height: 630px"
-          ></div>
-          <script
-            type="text/javascript"
-            src="https://assets.calendly.com/assets/external/widget.js"
-          ></script>
-          <!-- Calendly inline widget end -->
-        </div>
-        <!--
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" placeholder="🌸🌸🌸" class="contact__input"></textarea>
-                        <input type="button" value="Enter" class="contact__button button">
-                    </form>
-                </div>
-                -->
-      </section>
-
-      <!--===== SKILLS =====-->
-
-      <section class="skills section" id="sad-pupper">
-        <h2 class="section-title">Sad Pupper 😓</h2>
-
-        <div class="skills__container bd-grid">
-          <div class="work__img">
-            <img src="assets/img/sadpuppy.jpg" alt="" />
-          </div>
-
-          <div>
-            <p
-              class="about__text"
-              style="color: #330026; line-height: 1.8; font-size: 20px"
-            >
-              <b>Oh no! A sad pupper has appeared in the wild!! </b><br /><br />
-
-              <b> What happened??? </b>
-              <br /><br />
-              <b> It looks so sad 😞 </b>
-            </p>
-
-            <br /><br />
-
-            <a
-              class="typeform-share button"
-              href="https://form.typeform.com/to/ZqGK56sD"
-              data-mode="popup"
-              style="
-                display: inline-block;
-                text-decoration: none;
-                background-color: #ff45a5;
-                color: white;
-                cursor: pointer;
-                font-family: Helvetica, Arial, sans-serif;
-                font-size: 20px;
-                line-height: 50px;
-                text-align: center;
-                margin: 0;
-                height: 50px;
-                padding: 0px 33px;
-                border-radius: 25px;
-                max-width: 100%;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                font-weight: bold;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-              "
-              target="_blank"
-              >Make pupper happy!
-            </a>
-            <script>
-              (function () {
-                var qs,
-                  js,
-                  q,
-                  s,
-                  d = document,
-                  gi = d.getElementById,
-                  ce = d.createElement,
-                  gt = d.getElementsByTagName,
-                  id = "typef_orm_share",
-                  b = "https://embed.typeform.com/";
-                if (!gi.call(d, id)) {
-                  js = ce.call(d, "script");
-                  js.id = id;
-                  js.src = b + "embed.js";
-                  q = gt.call(d, "script")[0];
-                  q.parentNode.insertBefore(js, q);
-                }
-              })();
-            </script>
-          </div>
-
-          <!--       
-                    <div>
-                        <h2 class="skills__subtitle">Professional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>-->
-        </div>
-      </section>
-    </main>
-
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-      <p class="footer__title">Caitlyn</p>
-      <div class="footer__social">
-        <a href="https://www.linkedin.com/in/caitlyn-chen/" class="footer__icon"
-          ><i class="bx bxl-linkedin-square"></i
-        ></a>
-        <a href="#contact" class="footer__icon"
-          ><i class="bx bx-calendar-plus"></i
-        ></a>
-        <a href="https://github.com/catekat16" class="footer__icon"
-          ><i class="bx bxl-github bx-tada"></i>
-        </a>
-        <!--<a href="mailto:caitlyn.chen8@gmail.com" class="footer__icon"
-          ><i class="bx bx-envelope"></i
-        ></a>-->
-        <!--<a href="https://twitter.com/metapropnyc" class="footer__icon"><i class='bx bxl-twitter' ></i></a>-->
       </div>
-      <p>&#169; 2020 copyright all rights reserved</p>
-    </footer>
+    </section>
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
-    <!--===== MAIN JS =====-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/cursor.js"></script>
   </body>
 </html>
