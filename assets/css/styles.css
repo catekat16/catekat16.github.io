@@ -208,6 +208,10 @@ img {
   margin-right: 1rem;
 }
 
+.text-caption {
+  padding: 10px;
+}
+
 .foodart {
   display: block;
   margin-left: auto;
@@ -253,6 +257,9 @@ img {
 /*.nav__social-icon:hover {
   color: var(--hightlight1-color);
 }*/
+.transparent {
+  color: var(--primary-color);
+}
 
 .blue-button {
   display: inline-block;
@@ -301,11 +308,11 @@ img {
 }
 .wrapper .center-line {
   position: absolute;
-  height: 85%;
+  height: 80%;
   width: 4px;
   background: #fff;
   left: 50%;
-  top: 210px;
+  top: 256px;
   transform: translateX(-50%);
 }
 .wrapper .row {
@@ -336,6 +343,7 @@ img {
   z-index: -1;
   transform: rotate(45deg);
 }*/
+
 .row-1 section::before {
   right: -7px;
 }
@@ -390,7 +398,7 @@ img {
   justify-content: space-between;
 }
 .row section .details .title {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
 }
 .row section p {
