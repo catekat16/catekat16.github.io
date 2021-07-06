@@ -6,6 +6,7 @@
   --primary-color: #e6fdff;
   --highlight1-color: #c3ffff;
   --highlight2-color: #7bf2f2;
+  --highlight3-color: #14d5ef;
   --text-color: #262525;
 
   /*===== Fuente y tipografia =====*/
@@ -161,7 +162,7 @@ img {
   /*padding-right: 300px;*/
 }
 .nav__name:hover {
-  color: #262525;
+  color: var(--text-color);
 }
 
 .nav__profesion {
@@ -210,8 +211,8 @@ img {
 .foodart {
   padding-top: 30px;
   margin-top: 5.5rem;
-  width: 416px;
-  height: 500px;
+  width: 380px;
+  height: 457px;
   /*border-radius: 5px;*/
   background: url("../img/foodart.png");
   background-size: 100% auto;
@@ -244,7 +245,7 @@ img {
 }
 
 .dark-color {
-  color: #14d5ef;
+  color: var(--highlight3-color);
 }
 /*.nav__social-icon:hover {
   color: var(--hightlight1-color);
@@ -446,11 +447,23 @@ img {
 }
 
 /*Active menu*/
-.active {
+/*.active {
   color: var(--highlight1-color);
+}*/
+
+/* ===== Scroll Reveal =====*/
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
 }
 
-/* ===== FOOTER =====*/
+/* ===== FOOTER (contact) =====*/
 .footer {
   background-color: var(--primary-color);
   color: var(--text-color);
@@ -486,7 +499,7 @@ img {
   margin: 0 0rem;
 }
 .footer__icon:hover {
-  color: var(--highlight1-color);
+  color: var(--highlight2-color);
 }
 
 .footer__signature {
@@ -561,10 +574,11 @@ img {
   .nav__link:hover {
     background-color: var(--highlight1-color);
   }
+  /*
   .active {
     background-color: var(--highlight1-color);
     color: var(--text-color);
-  }
+  }*/
 }
 
 @media screen and (min-width: 1024px) {

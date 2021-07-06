@@ -90,11 +90,12 @@
       </nav>
     </header>
 
-    <section class="about-me" id="about-me">
+    <section class="about-me reveal" id="about-me">
       <div class="container-lg">
         <div class="row nin-vh-100 align-items-center align-content-center">
           <div class="col-md-6">
             <div class="home-img text-center">
+                <div class="py-3"></div>
               <div class="foodart"></div>
               <!--<img
                 src="assets/img/foodart.jpg"
@@ -104,8 +105,7 @@
             </div>
           </div>
           <div class="col-md-6 order-md-first">
-              <div class="py-5"></div>
-            <div class="home-text">
+            <div class="home-text py-3">
               <!--<p class="text-muted mb-1">Hello I'm</p>-->
               <h1>Hey, I'm Caitlyn! 👋</h1>
               <!--<h3 class="text-muted">I am a Product Designer</h3>-->
@@ -152,7 +152,7 @@
     </section>
 
     <div class="wrapper">
-    <section class="experience py-5" id="experience">
+    <section class="experience py-5 reveal" id="experience">
         
     
         <div class="container-lg py-4">
@@ -266,7 +266,8 @@
           </section>
         </div>
     </section>
-        <section class="resume py-5" id="resume">
+
+        <section class="resume py-5 reveal" id="resume">
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <div class="section-title text-center mb-5">
@@ -282,11 +283,9 @@
             </div>
           </section>
       
-   
 </div>
-    
 
-    <section class="projects py-5" id="projects">
+    <section class="projects py-5 reveal" id="projects">
       <div class="container-lg py-4">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -430,7 +429,8 @@
       </div>
     </section>
 
-    <footer class="footer" id="contact">
+
+    <footer class="footer reveal" id="contact">
         <div class="footer__details">
             <p class="footer__title">Let's Connect! 👋</p>
             <div class="footer__top">
@@ -462,9 +462,27 @@
         <p>Made with ❤️ by Caitlyn Chen</p>
         </div>
       </footer>
-  
+
+
       <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for(var i = 0; i < reveals.length; i++){
+
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+        }
+    }
+    </script>
 
     <script
       type="module"
