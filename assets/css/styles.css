@@ -214,9 +214,22 @@ img {
     }
 }
 
+.zoom:hover{
+    transform: scale(1.025) rotate(0.001deg);
+}
 /*.nav__social-icon:hover {
   color: var(--first-color);
 }*/
+
+.small-text{
+    font-size: 14px;
+}
+
+.small-text-italics{
+    font-size: 14px;
+    font-style: italic;
+}
+
 
 /*Aparecer menu*/
 .show {
