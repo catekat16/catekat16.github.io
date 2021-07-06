@@ -266,11 +266,13 @@
           </section>
         </div>
     </section>
-
-        <section class="resume py-5 reveal" id="resume">
+    <p></p>
+    <div class="py-4"></div>
+        <section class="resume reveal" id="resume">
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <div class="section-title text-center mb-5">
+                    
                   <div class="blue-button">
                     <p class="small-text">
                       <a class="link" href="https://drive.google.com/file/d/18ac_tbbIS-D4q9ksjJsbJk5atmGBOZ3I/view"
@@ -278,6 +280,7 @@
                       >
                     </p>
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -475,11 +478,10 @@
 
             var windowheight = window.innerHeight;
             var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 0;
-            reveals[i].classList.add('active');
-            /*if(revealtop < windowheight - revealpoint){
+            var revealpoint = 150;
+            if(revealtop < windowheight - revealpoint){
                 reveals[i].classList.add('active');
-            }*/
+            }
         }
     }
     </script>

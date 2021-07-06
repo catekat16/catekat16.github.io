@@ -301,7 +301,7 @@ img {
 }
 .wrapper .center-line {
   position: absolute;
-  height: 75%;
+  height: 85%;
   width: 4px;
   background: #fff;
   left: 50%;
@@ -326,7 +326,7 @@ img {
   position: relative;
   box-shadow: 0 3px 3px #c9dddf;
 }
-.wrapper .row section::before {
+/*.wrapper .row section::before {
   position: absolute;
   content: "";
   height: 15px;
@@ -335,7 +335,7 @@ img {
   top: 28px;
   z-index: -1;
   transform: rotate(45deg);
-}
+}*/
 .row-1 section::before {
   right: -7px;
 }
