@@ -9,6 +9,7 @@
     <meta property="og:type" content="Website" />
     <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51293464192_443cfc7d32_h.jpg" />
     <meta name="description" property="og:description" content="Personal Portfolio" /><meta name="author" content="Caitlyn Chen" />
+    <link rel="stylesheet" href="assets/css/cursor.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     
@@ -108,8 +109,12 @@
               <!--<p class="text-muted mb-1">Hello I'm</p>-->
               <h1>Hey, I'm Caitlyn! 👋</h1>
               <!--<h3 class="text-muted">I am a Product Designer</h3>-->
-              <p>I am a <span class="typed" data-typed-items="Product Designer, Product Manager, Developer, Entrepreneur"></span></p>
-              <div class="py-3">
+              <p class="typing-line">
+                <br /><span class="typed-text dark-color"></span
+                ><span class="cursor">&nbsp;</span><br />
+              </p>
+              <!--<p>I am a <span class="typed" data-typed-items="Product Designer, Product Manager, Developer, Entrepreneur"></span></p>-->
+              <div class="py-2"></div>
               <p>
                 ✨ I’m a rising senior studying computer science at Columbia
                 University with minors in applied math and entrepreneurship.
@@ -122,14 +127,14 @@
 
               <p>💻 Check out some of my projects and experiences below!</p>
             </div>
-            <div class="py-3"></div>
+            
               <div class="blue-button">
                 <p class="small-text">
                     <a class="link" href="#projects"><big>👉 </big>Check out my projects</a>
                 </p>
               </div>
             </div>
-            <div class="py-3"></div>
+           
             <div class="nav__social">
                 <a href="https://www.linkedin.com/in/caitlyn-chen/" class="footer__icon"
                   ><i class='bx bxl-linkedin' ></i>
@@ -344,8 +349,7 @@
                 ⚓️ AHOD: programming language
               </h3>
               <p class="mb-4 small-text">
-                Designed and built AHOD (All Hands on Deck), a user-friendly,
-                object-oriented language that makes it easier for users to
+                AHOD (All Hands on Deck) is a user-friendly, object-oriented language that makes it easier for users to
                 create turn-based card games. Built using OCaml and C.
               </p>
             </div>
@@ -474,5 +478,6 @@
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/cursor.js"></script>
   </body>
 </html>

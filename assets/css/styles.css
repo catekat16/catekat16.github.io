@@ -210,8 +210,8 @@ img {
 .foodart {
   padding-top: 30px;
   margin-top: 5.5rem;
-  width: 432px;
-  height: 520px;
+  width: 416px;
+  height: 500px;
   /*border-radius: 5px;*/
   background: url("../img/foodart.png");
   background-size: 100% auto;
@@ -231,6 +231,20 @@ img {
 
 .zoom:hover {
   transform: scale(1.025) rotate(0.001deg);
+}
+
+.typing-line {
+  display: inline;
+  overflow: hidden;
+  /*float: left;*/
+}
+.typing-line:before {
+  content: " ";
+  font-size: 16px;
+}
+
+.dark-color {
+  color: #14d5ef;
 }
 /*.nav__social-icon:hover {
   color: var(--hightlight1-color);
