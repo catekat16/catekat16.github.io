@@ -452,6 +452,11 @@ img {
 
 /*----end timeline----*/
 
+.rounded-design {
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+}
+
 /*Aparecer menu*/
 .show {
   left: 0;

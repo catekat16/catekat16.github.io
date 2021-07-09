@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Random Designs" />
+    <meta name="title" property="og:title" content="Random Designs" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/gradient.css" />
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+    rel="stylesheet"
+    />
+
+    <title>30-min design doodles</title>
+    <link rel="favicon icon" type="image/png" href="assets/img/🌼.png"/>
+
+  </head>
+<body>
+
+  <header class="gradient header">
+    <div>
+      <a href="#" class="nav__name">👀  <b>Rando designs </b></a>
+    </div>
+  </header>
+
+  <section class="projects py-5 reveal" id="design-doodles">
+    <div class="container-lg py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <div class="py-3"></div>
+            <h2 class="fw-bold">🐣 Design Doodles</h2>
+            <p class="small-text-italics">
+              30-min random design doodles every other night. Scroll for (hopefully) a progression
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg py-4">
+      <div class="row">
+          <div class="col-md-6 col-md-6">
+            <div class="project-item rounded-design">
+              
+              
+                <div class="embed-responsive embed-responsive-16by9">
+                  <div class="hover-container">
+                    <a href="https://xd.adobe.com/view/6b8f275d-ca9b-499a-8281-b4f89015f1c7-3edc/"></a>
+                  <iframe class="embed-responsive-item w-100 zoom" height="250" 
+                    src="https://xd.adobe.com/embed/6b8f275d-ca9b-499a-8281-b4f89015f1c7-3edc/"></iframe>
+                    <div class="middle">
+                    <div class="overlay">
+                      <p>👻 sike</p>
+                    </div>
+                  </div>
+                    <!--<div class="mini-text">
+                      <p>Wouldn't it be great to have a platform that could: </p>
+                      <p>1. Tell you how close you are to satisfying the requirements of your chosen degree & track</p>
+                      <p>a. Helps you optimize your schedule based on the difficulties of the teachers / classes (you can indicate triggers like wanting to balance difficulty of courseload while optimizing for transferring credits over for a master’s program / optimize for higher grade / credit limits)</p>
+                      <p>- automate considerations of predicting whether a class will likely be offered in another semester / which professor based on historical data from Vergil</p>
+                      <p>2. Scores class schedule: Tells you how difficult / achievable your class plan is and how long you should expect to spend on your classes</p>
+                      <p>- recommends peers to talk to who took a similar course load combination</p>
+                      <p>- consolidates top, updated and relevant comments/quotes on how classes were</p>
+                    </div>-->
+                </div>
+              </div>
+
+              <h3 class="text-capitalize fs-5 my-2">🌼 Fall Class Wishlist (7.8.21)</h3>
+              <p class="small-text">
+                Quick Ui Design "doodle" as I yet again debated internally over what classes I should take for my senior fall.
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+<footer class="gradient footer reveal" id="contact">
+  <div class="footer__details">
+      <p class="text-capitalize fs-5 my-2">Secret Page no. 1 🧐</p>
+      <div class="footer__top">
+          <a class="link" href="#design-doodles"><p class="nav__link">Back to top <big>👆</big></p></a>
+      </div>
+  </div>
+  <div class="blue-button">
+      <p class="small-text">
+          <big>👻 </big>hint for next secret page: hover</a
+      </p>
+    </div>
+  <div class="footer__social">
+    <a href="https://www.linkedin.com/in/caitlyn-chen/" class="footer__icon"
+      ><i class='bx bxl-linkedin' ></i>
+    </a>
+    <a href="https://github.com/catekat16" class="footer__icon"
+      ><i class="bx bxl-github"></i>
+    </a>
+    <a href="https://www.instagram.com/pen_doodles/" class="footer__icon"
+      ><i class='bx bxl-instagram'></i></a>
+  </div>
+  <div class="footer__signature">
+  <p>Made with ❤️ by Caitlyn Chen</p>
+  </div>
+</footer>
+
+
+      <!--===== SCROLL REVEAL =====-->
+      <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+    
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+    
+            for(var i = 0; i < reveals.length; i++){
+    
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+        </script>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
